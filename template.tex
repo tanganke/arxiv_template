@@ -1,3 +1,4 @@
+\documentclass{article}
 \input{preamble.tex}
 
 \title{A template for the \emph{arxiv} style}
@@ -57,23 +58,23 @@ Narimana, Levand \\ \texttt{stariate@ee.mount-sheikh.edu} \\
 }
 
 \begin{document}
-	\maketitle
+\maketitle
 
-	\input{section/_abstract.tex}
-	\input{section/introduction.tex}
-	\input{section/related_work.tex}
-	\input{section/method.tex}
-	\input{section/experiments.tex}
-	\input{section/conclusion.tex}
+\input{section/_abstract.tex}
+\input{section/introduction.tex}
+\input{section/related_work.tex}
+\input{section/method.tex}
+\input{section/experiments.tex}
+\input{section/conclusion.tex}
 
-	\bibliographystyle{unsrtnat}
-	\bibliography{references}
+\bibliographystyle{unsrtnat}
+\bibliography{references}
 
-	% appendix
-	\appendix
-	\newpage
-	\startcontents[sections] % 开始定义附录目录
-	\printcontents[sections]{}{1}{\setcounter{tocdepth}{2}} % 打印附录目录
-	\vskip 0.2in \hrule
-	\input{section/appendix/appendix.tex}
+% appendix
+\appendix
+\newpage
+\startcontents[sections] % 开始定义附录目录
+\printcontents[sections]{}{1}{\setcounter{tocdepth}{2}} % 打印附录目录
+\vskip 0.2in \hrule
+\input{section/appendix/appendix.tex}
 \end{document}
